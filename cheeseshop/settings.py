@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "9&%l8tqlhr4ib=(-pa(-rtefotm6eow@4ll^*
 DEBUG = True
 
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "cmsc-210-sheeseshop.herokuapp.com"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "cmsc-210-cheeseshop.herokuapp.com"]
 
 
 # Application definition
