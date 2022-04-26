@@ -4,7 +4,7 @@ from datetime import date, timedelta
 
 import requests
 from bs4 import BeautifulSoup
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from django.utils.text import slugify
 from tqdm import tqdm
 
