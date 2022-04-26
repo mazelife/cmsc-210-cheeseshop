@@ -33,7 +33,6 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1", "cmsc-210-sheeseshop.herokuapp.com"]
 
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -77,6 +76,8 @@ WSGI_APPLICATION = "cheeseshop.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+# https://github.com/kennethreitz/dj-database-url
+# https://devcenter.heroku.com/articles/python-concurrency-and-database-connections#persistent-connections
 DATABASES = {
     "default": dj_database_url.config(conn_max_age=500, default=f"sqlite:///{BASE_DIR}/db.sqlite3")
 }
@@ -119,6 +120,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
