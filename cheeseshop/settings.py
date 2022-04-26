@@ -25,7 +25,8 @@ SECRET_KEY = "9&%l8tqlhr4ib=(-pa(-rtefotm6eow@4ll^*mpq86#gcq_wgo"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "cmsc-210-sheeseshop.herokuapp.com"]
 
 
 # Application definition
